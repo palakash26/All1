@@ -1,10 +1,10 @@
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
-image=cv2.imread("C:\\Users\\abhay\\asip\\grayscaleImage.jpg")
+image=cv2.imread(r"C:\Users\pala6\Downloads\UI-UX\asip\grayscaleImage.jpg")
 kernel=np.array([[-1,-1,-1],[-1,8,-1],[-1,-1,-1]])
 convolved_Image=cv2.filter2D(image,-1,kernel)
-template = cv2.imread("C:\\Users\\abhay\\asip\\image.png", cv2.IMREAD_GRAYSCALE)
+template = cv2.imread(r"C:\Users\pala6\Downloads\UI-UX\asip\image.png", cv2.IMREAD_GRAYSCALE)
 
 # Perform template matching
 convolved_Image = cv2.cvtColor(convolved_Image, cv2.COLOR_BGR2GRAY)

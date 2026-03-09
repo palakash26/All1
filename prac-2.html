@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Digital-Visual Design System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        /* Google Font */
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Oswald', sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Brand Colors */
+        .color-box {
+            display: inline-block;
+            width: 120px;
+            height: 120px;
+            margin: 10px;
+            border-radius: 8px;
+            text-align: center;
+            line-height: 120px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .black { background: #000; }
+        .white { background: #fff; color: #000; border: 1px solid #ccc; }
+        .red { background: #FF3B30; }
+        .gray { background: #BDBDBD; color: #000; }
+
+        /* Typography */
+        .typography {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .font-sample {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        /* UI Components */
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: 0.3s;
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .btn-primary {
+            background: #FF3B30;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #D32F2F;
+        }
+
+        .btn-secondary {
+            background: #000;
+            color: white;
+        }
+
+        /* Cards */
+        .card {
+            width: 300px;
+            border-radius: 10px;
+            overflow: hidden;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            padding: 15px;
+            margin: 10px auto;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card-title {
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        .card-price {
+            color: #FF3B30;
+            font-size: 1.5rem;
+        }
+
+        /* Input Fields */
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #BDBDBD;
+            border-radius: 5px;
+        }
+
+        .input-field:focus {
+            border: 2px solid #FF3B30;
+        }
+
+        /* Icon Samples */
+        .icon-samples {
+            text-align: center;
+            font-size: 30px;
+            margin-top: 20px;
+        }
+
+        .icon-samples i {
+            margin: 10px;
+            color: #FF3B30;
+        }
+
+        /* Grid System */
+        .container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 10px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .col-6 { grid-column: span 6; background: #ddd; padding: 20px; text-align: center; }
+        .col-4 { grid-column: span 4; background: #ccc; padding: 20px; text-align: center; }
+    </style>
+</head>
+<body>
+
+    <h1>Nike Digital-Visual Design System</h1>
+
+    <!-- Brand Colors -->
+    <h2>Brand Colors</h2>
+    <div style="text-align: center;">
+        <div class="color-box black">Black</div>
+        <div class="color-box white">White</div>
+        <div class="color-box red">Nike Red</div>
+        <div class="color-box gray">Gray</div>
+    </div>
+
+    <!-- Typography -->
+    <h2>Typography</h2>
+    <div class="typography">
+        <p class="font-sample" style="font-weight: 400;">Oswald Regular</p>
+        <p class="font-sample" style="font-weight: 700;">Oswald Bold</p>
+    </div>
+
+    <!-- UI Components -->
+    <h2>Buttons</h2>
+    <div style="text-align: center;">
+        <button class="btn btn-primary">Primary Button</button>
+        <button class="btn btn-secondary">Secondary Button</button>
+    </div>
+
+    <h2>Cards</h2>
+    <div class="card">
+        <img src="https://source.unsplash.com/300x200/?nike,shoes" alt="Nike Shoes">
+        <p class="card-title">Nike Air Max</p>
+        <p class="card-price">$120</p>
+    </div>
+
+    <h2>Form Elements</h2>
+    <div style="text-align: center;">
+        <input type="text" class="input-field" placeholder="Enter your name">
+        <input type="email" class="input-field" placeholder="Enter your email">
+    </div>
+
+    <h2>Icons</h2>
+    <div class="icon-samples">
+        <i class="fas fa-running"></i>
+        <i class="fas fa-shopping-cart"></i>
+        <i class="fas fa-heart"></i>
+    </div>
+
+    <h2>Grid System</h2>
+    <div class="container">
+        <div class="col-6">6 Columns</div>
+        <div class="col-6">6 Columns</div>
+        <div class="col-4">4 Columns</div>
+        <div class="col-4">4 Columns</div>
+        <div class="col-4">4 Columns</div>
+    </div>
+
+</body>
+</html>

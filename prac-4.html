@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Interface</title>
+    <style>
+        /* Resetting margin, padding and box-sizing */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            line-height: 1.5;
+        }
+
+        /* Header */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 24px;
+        }
+
+        /* Main Content */
+        .container {
+            padding: 20px;
+        }
+
+        .card {
+            background-color: white;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-bottom: 20px;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .card h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* Button */
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-align: center;
+            display: inline-block;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 20px;
+            }
+
+            .card {
+                padding: 10px;
+            }
+
+            .card h3 {
+                font-size: 16px;
+            }
+
+            .card p {
+                font-size: 12px;
+            }
+
+            .btn {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 18px;
+            }
+
+            .card {
+                padding: 8px;
+            }
+
+            .card h3 {
+                font-size: 14px;
+            }
+
+            .card p {
+                font-size: 11px;
+            }
+
+            .btn {
+                font-size: 12px;
+                padding: 7px 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Mobile Web Interface</h1>
+    </header>
+
+    <!-- Main Content Section -->
+    <div class="container">
+        <div class="card">
+            <h3>Feature 1</h3>
+            <p>This is a simple description of the first feature. Mobile-friendly and responsive!</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+
+        <div class="card">
+            <h3>Feature 2</h3>
+            <p>This feature is optimized for mobile use, with a simple and easy-to-navigate layout.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+
+        <div class="card">
+            <h3>Feature 3</h3>
+            <p>Responsive design ensures a seamless experience on various mobile devices.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </div>
+
+</body>
+</html>
